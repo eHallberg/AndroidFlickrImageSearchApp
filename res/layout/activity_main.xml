@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#151B2F"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/searchtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/searchtext"
+        android:text="@string/search" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchbutton"
+        android:text="@string/next" />
+    
+    <Button
+        android:id="@+id/searchAgain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/prev"
+        android:layout_toLeftOf="@+id/next"
+        android:layout_below="@+id/searchbutton"
+        android:text="@string/searchAgain" />
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchbutton"
+        android:text="@string/prev" />
+
+    <ListView
+        android:id="@+id/photobar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="1dp"
+        android:divider="#151B2F"
+        android:dividerHeight="4dp" >
+    </ListView>
+
+</RelativeLayout>
