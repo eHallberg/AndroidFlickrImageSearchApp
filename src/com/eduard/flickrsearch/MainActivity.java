@@ -60,9 +60,9 @@ public class MainActivity extends Activity {
   String FlickrQuery_tag = "&tags=";
   String FlickrQuery_key = "&api_key=";
 
-  String FlickrApiKey = "bd29e274e9626faabb31ab494ba6c84b";
+  String FlickrApiKey = "your_key";
 
-  final String DEFAULT_SEARCH = "betsafe";
+  final String DEFAULT_SEARCH = "effex";
 
   EditText searchText;
 
